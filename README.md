@@ -10,7 +10,13 @@ Electron app that bundles the XSCALE wiki with ungit to deliver a smooth learnin
 
 ## Developing
 
-To do.
+```
+npm install
+```
+
+```
+npm start
+```
 
 ## Atributions
 
