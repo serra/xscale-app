@@ -1,0 +1,776 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"export",
+				"export_meta_data〔argument〕"
+			],
+			[
+				"practi",
+				"practicioner"
+			],
+			[
+				"xs",
+				"xscalealliance.org"
+			],
+			[
+				"faci",
+				"facilitation"
+			],
+			[
+				"Structu",
+				"Structures"
+			],
+			[
+				"method",
+				"methodologies"
+			],
+			[
+				"di",
+				"displayed_price〔variable〕"
+			],
+			[
+				"__",
+				"__add__"
+			],
+			[
+				"_",
+				"_den"
+			],
+			[
+				"fraction",
+				"fraction_tests〔module〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"p",
+				"Preferences: Settings"
+			],
+			[
+				"rene",
+				"Rename File"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"renm",
+				"Rename File"
+			],
+			[
+				"git re",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"prefren",
+				"Preferences: Browse Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mo",
+				"File: Move"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"minim",
+				"View: Toggle Minimap"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"re",
+				"Rename File"
+			],
+			[
+				"m",
+				"File: Move"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"qc",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"qu",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"quick",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"commit",
+				"Set Syntax: Git Commit"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/marijn/dev/xscale-app"
+	],
+	"file_history":
+	[
+		"/Users/marijn/dev/Zefram-Cochrane/.gitignore",
+		"/Users/marijn/dev/Zefram-Cochrane/tiddlers/Dunbar_Number.tid",
+		"/Users/marijn/dev/Zefram-Cochrane/README.md",
+		"/Users/marijn/dev/Zefram-Cochrane/.travis.yml",
+		"/Users/marijn/dev/xscale-guide/.travis.yml",
+		"/Users/marijn/dev/xscale-guide/index.html",
+		"/Users/marijn/dev/xscale-guide/colophon.html",
+		"/Users/marijn/dev/xscale-guide/README.md",
+		"/Users/marijn/dev/xscale-guide/source/conf.py",
+		"/Users/marijn/dev/xscale-guide/import_tiddlers.py",
+		"/Users/marijn/dev/xscale-guide/source/practices.rst",
+		"/Users/marijn/dev/xscale-guide/source/_generated/XSCALE Roles.rst",
+		"/Users/marijn/dev/xscale-guide/source/colophon.rst",
+		"/Users/marijn/dev/xscale-guide/filters/add_edit_link_to_h1_filter.py",
+		"/Users/marijn/dev/xscale-guide/filters/remove_menu_from_text_filter.py",
+		"/Users/marijn/dev/xscale-guide/Makefile",
+		"/Users/marijn/dev/xscale-guide/filters/all_relative_links_to_wiki_filter.py",
+		"/Users/marijn/dev/xscale-guide/source/_generated/XSCALE Principles.rst",
+		"/Users/marijn/dev/xscale-guide/process_imports.py",
+		"/Users/marijn/dev/xscale-guide/source/_generated/.gitignore",
+		"/Users/marijn/dev/xscale-guide/source/index.rst",
+		"/Users/marijn/dev/xscale-guide/PyTiddlyWiki/exporttiddler.py",
+		"/Users/marijn/dev/xscale-guide/source/introduction.rst",
+		"/Users/marijn/dev/xscale-guide/to_header_3_filter.py",
+		"/Users/marijn/dev/xscale-guide/_build/rinoh/XSCALEGuide.pdf",
+		"/Users/marijn/dev/xscale-guide/source/downloads.rst",
+		"/Users/marijn/dev/xscale-guide/requirements.txt",
+		"/Users/marijn/dev/xscale-guide/source/legal.rst",
+		"/Users/marijn/dev/xscale-guide/LICENSE",
+		"/Users/marijn/dev/xscale-guide/source/_generated/Business Bingo.rst",
+		"/Users/marijn/dev/xscale-guide/source/_generated/Leadership as a Service.rst",
+		"/Users/marijn/dev/xscale-guide/index.rst",
+		"/Users/marijn/dev/xscale-guide/downloads.rst",
+		"/Users/marijn/dev/xscale-guide/conf.py",
+		"/Users/marijn/dev/xscale-guide/_wiki/Business Bingo.rst",
+		"/Users/marijn/dev/xscale-guide/introduction.rst",
+		"/Users/marijn/dev/xscale-guide/PyTiddlyWiki/example.py",
+		"/Users/marijn/dev/xscale-guide/contect.py",
+		"/Users/marijn/dev/xscale-guide/PyTiddlyWiki/__init__.py",
+		"/Users/marijn/dev/xscale-guide/_wiki/index.html",
+		"/Users/marijn/dev/xscale-guide/.gitignore",
+		"/Users/marijn/dev/XSCALE-Alliance/.ruby-version",
+		"/Users/marijn/dev/XSCALE-Alliance/source/signatories.html.slim",
+		"/Users/marijn/dev/serraict.github.io/pages/psm2/01_refinement.md",
+		"/Users/marijn/dev/serraict.github.io/pages/psm2/02_daily_scrum.md",
+		"/Users/marijn/dev/serraict.github.io/pages/psm2/03_toxic_context.md",
+		"/Users/marijn/dev/serraict.github.io/pages/psm2/04_mechanical_vs_professional_scrum.md",
+		"/Users/marijn/dev/serraict.github.io/pages/XSCALE.md",
+		"/Users/marijn/dev/serraict.github.io/_layouts/xscale-page.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/themes/bootstrap/xscale-page.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/descaling-manifesto-nl.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/book-review/2015-10-01-book-review-Implementing-Lean-Software-Development-From-Concept-to-Cash.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2016-05-31-psm2-exam.md",
+		"/Users/marijn/dev/serraict.github.io/pages/psm2/index.md",
+		"/Users/marijn/dev/serraict.github.io/_includes/contact-form.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/contact-form-inline.html",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2016-02-10-psp-exam.md",
+		"/Users/marijn/dev/serraict.github.io/_site/learn/2016/05/31/psm2-exam.html",
+		"/Users/marijn/dev/serraict.github.io/assets/themes/bootstrap/css/style.css",
+		"/Users/marijn/dev/serraict.github.io/_includes/themes/bootstrap/default.html",
+		"/Users/marijn/dev/serraict.github.io/assets/themes/bootstrap/resources/lunr/search.js",
+		"/Users/marijn/dev/serraict.github.io/search.html",
+		"/Users/marijn/dev/serraict.github.io/pages/contact.html",
+		"/Users/marijn/dev/serraict.github.io/pages/feedback.md",
+		"/Users/marijn/dev/serraict.github.io/pages/index.md",
+		"/Users/marijn/dev/serraict.github.io/pages/responses.md",
+		"/Users/marijn/dev/serraict.github.io/tags.html",
+		"/Users/marijn/dev/serraict.github.io/blog.html",
+		"/Users/marijn/dev/serraict.github.io/index-nl.md",
+		"/Users/marijn/dev/serraict.github.io/index.md",
+		"/Users/marijn/dev/serraict.github.io/_includes/JB/posts_collate",
+		"/Users/marijn/dev/serraict.github.io/categories.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/JB/pages_list",
+		"/Users/marijn/dev/serraict.github.io/_posts/xscale/2019-03-01-04-autonomous-teams-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2019-03-02-afraid-of-writing-code.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/xscale/2019-02-12-01-exponential-return-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/xscale/2019-02-28-03-continuous-throughput-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/xscale/2019-02-21-02-simple-design-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/xscale/03-continuous-throughput-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/xscale/04-autonomous-teams-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/xscale/transcripts/xscale_principles_04_captions.sbv",
+		"/Users/marijn/dev/serraict.github.io/_includes/featured_image.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/themes/bootstrap/page.html",
+		"/Users/marijn/dev/serraict.github.io/_drafts/xscale/transcripts/xscale_principles_03_captions.sbv",
+		"/Users/marijn/dev/serraict.github.io/_posts/xscale/2019-02-15-01-simple-design-principles-of-agile-organizations-transcript.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/xscale/transcripts/xscale_principles_02_captions.sbv",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2019-02-11-what-is-coaching.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/learn/2019-02-02-technical-debt-definitions.md",
+		"/Users/marijn/dev/serraict.github.io/makefile",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2019-02-02-technical-debt-definitions.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/scrum-toolbox/2015-12-10-tracking-and-visualizing-technical debt.md",
+		"/Users/marijn/dev/serraict.github.io/_drafts/thoughts/on-transparency-and-courage.md",
+		"/Users/marijn/dev/serraict.github.io/_includes/comment.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/comment-list.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/board.html",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2019-01-12-liberating-structures-workshop.md",
+		"/Users/marijn/dev/serraict.github.io/_includes/JB/comments",
+		"/Users/marijn/dev/serraict.github.io/_includes/comments.html",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2018-12-19-thanks-2018.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2018-12-12-liberating-structures-workshop.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2018-11-20-working-with-user-stories.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2018-12-07-mvp.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2016-06-14-on-failure.md",
+		"/Users/marijn/dev/serraict.github.io/.travis.yml",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2018-10-04-history-waterfall-and-scrum.md",
+		"/Users/marijn/dev/serraict.github.io/.gitignore",
+		"/Users/marijn/dev/serraict.github.io/firebase.json",
+		"/Users/marijn/dev/serraict.github.io/_includes/loopy_url",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2017-06-26-loopy-tips-and-tricks.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2018-07-12-the-agilist.md",
+		"/Users/marijn/dev/serraict.github.io/_site/thoughts/2018/07/17/work-life-balance.html",
+		"/Users/marijn/dev/serraict.github.io/_posts/thoughts/2018-07-17-work-life-balance.md",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2018-07-03-your-custom-agile-article-feed.md",
+		"/Users/marijn/dev/serraict.github.io/_layouts/post.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/themes/bootstrap/post.html",
+		"/Users/marijn/dev/serraict.github.io/_layouts/default.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/comment-form.html",
+		"/Users/marijn/dev/serraict.github.io/_includes/contact.html",
+		"/Users/marijn/dev/serraict.github.io/script/cibuild.sh",
+		"/Users/marijn/dev/serraict.github.io/staticman.yml",
+		"/Users/marijn/dev/serraict.github.io/_posts/learn/2018-07-04-your-custom-agile-article-feed.md",
+		"/Users/marijn/.rvm/log/1530534513_ruby-2.3.0/package_install_coreutils_libyaml_openssl.log",
+		"/Users/marijn/.rvm/log/1530534832_ruby-2.3.0/package_install_coreutils_libyaml.log",
+		"/Users/marijn/dev/jbrains-tdd/README.md",
+		"/Users/marijn/dev/jbrains-tdd/S02/tests/context.py",
+		"/Users/marijn/dev/jbrains-tdd/makefile",
+		"/Users/marijn/dev/jbrains-tdd/S02/tests/__init__.py",
+		"/Users/marijn/dev/jbrains-tdd/S02/__init__.py"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "",
+	"project": "xscale-app.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"re",
+				"README.md"
+			],
+			[
+				"",
+				".gitignore"
+			],
+			[
+				"dunb",
+				"tiddlers/Dunbar_Number.tid"
+			],
+			[
+				"dunbar",
+				"tiddlers/Dunbar_Number.tid"
+			],
+			[
+				"trav",
+				".travis.yml"
+			],
+			[
+				"tra",
+				".travis.yml"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				".tra",
+				".travis.yml"
+			],
+			[
+				"travis",
+				".travis.yml"
+			],
+			[
+				"impo",
+				"import_tiddlers.py"
+			],
+			[
+				"xscale",
+				"source/_generated/XSCALE Principles.rst"
+			],
+			[
+				"all",
+				"filters/all_relative_links_to_wiki_filter.py"
+			],
+			[
+				"make",
+				"Makefile"
+			],
+			[
+				"dow",
+				"source/downloads.rst"
+			],
+			[
+				"conf",
+				"source/conf.py"
+			],
+			[
+				"leg",
+				"source/legal.rst"
+			],
+			[
+				"con",
+				"source/conf.py"
+			],
+			[
+				"intro",
+				"source/introduction.rst"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"lead",
+				"source/_generated/Leadership as a Service.rst"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"import",
+				"import_tiddlers.py"
+			],
+			[
+				"mak",
+				"Makefile"
+			],
+			[
+				"requi",
+				"requirements.txt"
+			],
+			[
+				"index",
+				"index.rst"
+			],
+			[
+				"reA",
+				"README.md"
+			],
+			[
+				"busin",
+				"_wiki/Business Bingo.rst"
+			],
+			[
+				"exampl",
+				"PyTiddlyWiki/example.py"
+			],
+			[
+				"Make",
+				"Makefile"
+			],
+			[
+				"leand",
+				"_posts/book-review/2015-10-01-book-review-Implementing-Lean-Software-Development-From-Concept-to-Cash.md"
+			],
+			[
+				"psm",
+				"_posts/learn/2016-05-31-psm2-exam.md"
+			],
+			[
+				"contac",
+				"_includes/contact-form.html"
+			],
+			[
+				"psp",
+				"_posts/learn/2016-02-10-psp-exam.md"
+			],
+			[
+				"styl",
+				"assets/themes/bootstrap/css/style.css"
+			],
+			[
+				"search.js",
+				"assets/themes/bootstrap/resources/lunr/search.js"
+			],
+			[
+				"searc",
+				"search.html"
+			],
+			[
+				"categr",
+				"categories.html"
+			],
+			[
+				"post",
+				"_includes/JB/posts_collate"
+			],
+			[
+				"blog",
+				"blog.html"
+			],
+			[
+				"pages",
+				"_includes/JB/pages_list"
+			],
+			[
+				"tags",
+				"tags.html"
+			],
+			[
+				"sear",
+				"search.html"
+			],
+			[
+				"xsca",
+				"pages/XSCALE.md"
+			],
+			[
+				"autono",
+				"_posts/xscale/2019-03-01-04-autonomous-teams-principles-of-agile-organizations-transcript.md"
+			],
+			[
+				"style",
+				"assets/themes/bootstrap/css/style.css"
+			],
+			[
+				"featur",
+				"_includes/featured_image.html"
+			],
+			[
+				"captions",
+				"_drafts/xscale/transcripts/xscale_principles_04_captions.sbv"
+			],
+			[
+				"xscal",
+				"_posts/xscale/2019-02-12-01-exponential-return-principles-of-agile-organizations-transcript.md"
+			],
+			[
+				"princ",
+				"_drafts/xscale/transcripts/xscale_principles_02_captions.sbv"
+			],
+			[
+				"caption",
+				"_drafts/01_exponential_return_principles_of_agile_organizations_captions.sbv"
+			],
+			[
+				"vis",
+				"_posts/scrum-toolbox/2015-12-10-tracking-and-visualizing-technical debt.md"
+			],
+			[
+				"baord",
+				"_includes/board.html"
+			],
+			[
+				"comme",
+				"_includes/comment.html"
+			],
+			[
+				"comment.",
+				"_includes/comment.html"
+			],
+			[
+				"comment-",
+				"_includes/comment-list.html"
+			],
+			[
+				"workshop",
+				"_posts/learn/2019-01-12-liberating-structures-workshop.md"
+			],
+			[
+				"liberat",
+				"_posts/learn/2019-01-12-liberating-structures-workshop.md"
+			],
+			[
+				"boar",
+				"_includes/board.html"
+			],
+			[
+				"lib",
+				"_posts/learn/2018-12-12-liberating-structures-workshop.md"
+			],
+			[
+				"on-fail",
+				"_posts/thoughts/2016-06-14-on-failure.md"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"board",
+				"_includes/board.html"
+			],
+			[
+				"fire",
+				"firebase.json"
+			],
+			[
+				"loop",
+				"_posts/thoughts/2017-06-26-loopy-tips-and-tricks.md"
+			],
+			[
+				"defaul",
+				"_includes/themes/bootstrap/default.html"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"stly",
+				"assets/themes/bootstrap/css/style.css"
+			],
+			[
+				"feed",
+				"_posts/learn/2018-07-03-your-custom-agile-article-feed.md"
+			],
+			[
+				"agilist",
+				"_posts/thoughts/2018-07-12-the-agilist.md"
+			],
+			[
+				"work",
+				"_posts/thoughts/2018-07-17-work-life-balance.md"
+			],
+			[
+				"cibui",
+				"script/cibuild.sh"
+			],
+			[
+				"comm",
+				"_includes/comment-form.html"
+			],
+			[
+				"stat",
+				"staticman.yml"
+			],
+			[
+				"com",
+				"_includes/comments.html"
+			],
+			[
+				"pip",
+				"python/Pipfile"
+			],
+			[
+				"req",
+				"python/requirements.txt"
+			],
+			[
+				"requ",
+				"python/requirements.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Button"
+			]
+		],
+		"width": 659.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

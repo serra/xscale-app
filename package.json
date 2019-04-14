@@ -1,0 +1,22 @@
+{
+  "name": "xscale-app",
+  "version": "0.1.0",
+  "description": "Portal to smooth collaboration on the XSCALE wiki",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/serra/xscale-app",
+  "keywords": [
+    "XSCALE",
+    "wiki",
+    "learning",
+    "ecosystem",
+    "electron"
+  ],
+  "author": "Marijn van der Zee",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}

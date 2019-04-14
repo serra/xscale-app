@@ -7,3 +7,14 @@ Electron app that bundles the XSCALE wiki with ungit to deliver a smooth learnin
  1. Hookup your github account
  1. Collaborate
  1. Share
+
+## Developing
+
+To do.
+
+## Atributions
+
+Started from the [Electron Quick Start].
+
+
+ [Electron Quick Start]: https://github.com/electron/electron-quick-start
