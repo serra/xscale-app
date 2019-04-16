@@ -11,20 +11,21 @@ let mainWindow
 // set the local wiki directory
 const wikiDir = '~/dev/Zefram-Cochrane'
 const wikiPort = 8000
-// start tiddlywiki server in this directory
 let wikiProcess = {}
 // start ungit in this directory
+const ungitPort = 8001
 let ungitProces = {}
 
 function init () {
   initWiki()
+  initUngit()
   createWindow()
 }
 
 function initWiki() {
   const cmd = `tiddlywiki ${wikiDir} --server ${wikiPort}`
-  console.log(cmd)
-  wikiProcess = exec(cmd);
+
+  wikiProcess = exec(cmd)
 
   wikiProcess.stdout.on('data', (data) => {
     console.log(` wiki:  ${data}`)
@@ -39,11 +40,19 @@ function initWiki() {
   })
 }
 
+function initUngit() {
+  const ungitOptions = {
+    cwd: wikiDir
+  }
+  const cmd = `./node_modules/ungit/bin/ungit --port ${ungitPort}`
+  exec(cmd)
+}
+
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 800,
     webPreferences: {
       nodeIntegration: true
     }

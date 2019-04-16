@@ -18,5 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.1.4"
+  },
+  "dependencies": {
+    "ungit": "^1.4.43"
   }
 }
