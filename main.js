@@ -4,7 +4,7 @@ const { spawn, exec } = require('child_process');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+let windows = {}
 
 // XSCALE app initialization
 
@@ -53,9 +53,9 @@ function hookProcess(theProcess, label) {
   })  
 }
 
-function createWindow (page) {
+function createWindow (page, key) {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  w = new BrowserWindow({
     width: 1000,
     height: 800,
     webPreferences: {
@@ -64,17 +64,19 @@ function createWindow (page) {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile(page)
+  w.loadFile(page)
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  // w.webContents.openDevTools()
+
+  windows[page] = w
 
   // Emitted when the window is closed.
-  mainWindow.on('closed', function () {
+  w.on('closed', function () {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    mainWindow = null
+    windows[page] = null
   })
 }
 
