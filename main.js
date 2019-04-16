@@ -14,7 +14,7 @@ const wikiPort = 8000
 let wikiProcess = {}
 // start ungit in this directory
 const ungitPort = 8001
-let ungitProces = {}
+let ungitProcess = {}
 
 function init () {
   initWiki()
@@ -26,18 +26,7 @@ function initWiki() {
   const cmd = `tiddlywiki ${wikiDir} --server ${wikiPort}`
 
   wikiProcess = exec(cmd)
-
-  wikiProcess.stdout.on('data', (data) => {
-    console.log(` wiki:  ${data}`)
-  })
-
-  wikiProcess.stderr.on('data', (data) => {
-    console.log(` wiki stderr: ${data}`)
-  })
-
-  wikiProcess.on('close', (code) => {
-    console.log(`child process exited with code ${code}`)
-  })
+  hookProcess(wikiProcess, 'wiki')
 }
 
 function initUngit() {
@@ -45,7 +34,23 @@ function initUngit() {
     cwd: wikiDir
   }
   const cmd = `./node_modules/ungit/bin/ungit --port ${ungitPort}`
-  exec(cmd)
+  ungitProcess = exec(cmd)
+  hookProcess(ungitProcess, 'ungit')
+}
+
+function hookProcess(theProcess, label) {
+
+  theProcess.stdout.on('data', (data) => {
+    console.log(` ${label}:  ${data}`)
+  })
+
+  theProcess.stderr.on('data', (data) => {
+    console.log(` ${label} stderr: ${data}`)
+  })
+
+  theProcess.on('close', (code) => {
+    console.log(`child process "${label}" exited with code ${code}`)
+  })  
 }
 
 function createWindow () {
