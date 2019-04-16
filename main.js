@@ -1,19 +1,15 @@
-// Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const { spawn, exec } = require('child_process');
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
 let windows = {}
 
-// XSCALE app initialization
-
-// set the local wiki directory
+// XSCALE App configuration
 const wikiDir = '~/dev/Zefram-Cochrane'
 const wikiPort = 8000
 let wikiProcess = {}
-// start ungit in this directory
+const repoUngitUrl = url = 'repository?path=%2FUsers%2Fmarijn%2Fdev%2FZefram-Cochrane'
 const ungitPort = 8001
+const fullRepoUrl = `http://localhost:${ungitPort}/#/${repoUngitUrl}`
 let ungitProcess = {}
 
 function init () {
@@ -32,8 +28,7 @@ function initWiki() {
 
 function initUngit() {
   const cmd = `./node_modules/ungit/bin/ungit --no-launchBrowser --port ${ungitPort}`
-  url = 'repository?path=%2FUsers%2Fmarijn%2Fdev%2FZefram-Cochrane' // todo: fix url
-  console.log(`To browse ungit, go to http://localhost:${ungitPort}/#/${url}`)
+  console.log(`To browse ungit, go to ${fullRepoUrl}`)
   ungitProcess = exec(cmd)
   hookProcess(ungitProcess, 'ungit')
 }
@@ -53,7 +48,7 @@ function hookProcess(theProcess, label) {
   })  
 }
 
-function createWindow (page, key) {
+function createWindow (page) {
   // Create the browser window.
   w = new BrowserWindow({
     width: 1000,
@@ -80,20 +75,11 @@ function createWindow (page, key) {
   })
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
 app.on('ready', init)
 
-// Quit when all windows are closed.
 app.on('window-all-closed', function () {
-  // On macOS it is common for applications and their menu bar
-  // to stay active until the user quits explicitly with Cmd + Q
-  if (process.platform !== 'darwin') app.quit()
+  app.quit()
 })
 
 app.on('activate', function () {
-  // On macOS it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) createWindow()
 })
