@@ -19,7 +19,8 @@ let ungitProcess = {}
 function init () {
   initWiki()
   initUngit()
-  createWindow()
+  createWindow('collaborate.html')
+  createWindow('wiki.html')
 }
 
 function initWiki() {
@@ -30,10 +31,9 @@ function initWiki() {
 }
 
 function initUngit() {
-  const ungitOptions = {
-    cwd: wikiDir
-  }
-  const cmd = `./node_modules/ungit/bin/ungit --port ${ungitPort}`
+  const cmd = `./node_modules/ungit/bin/ungit --no-launchBrowser --port ${ungitPort}`
+  url = 'repository?path=%2FUsers%2Fmarijn%2Fdev%2FZefram-Cochrane' // todo: fix url
+  console.log(`To browse ungit, go to http://localhost:${ungitPort}/#/${url}`)
   ungitProcess = exec(cmd)
   hookProcess(ungitProcess, 'ungit')
 }
@@ -53,7 +53,7 @@ function hookProcess(theProcess, label) {
   })  
 }
 
-function createWindow () {
+function createWindow (page) {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 1000,
@@ -64,7 +64,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('wiki.html')
+  mainWindow.loadFile(page)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
