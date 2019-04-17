@@ -98,3 +98,8 @@ app.on('window-all-closed', function () {
 
 app.on('activate', function () {
 })
+
+app.on('will-quit', function(){
+  wikiProcess.kill('SIGINT');
+  ungitProcess.kill('SIGINT');
+})
