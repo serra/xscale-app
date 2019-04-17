@@ -1,33 +1,48 @@
-const {app, BrowserWindow} = require('electron')
-const { spawn, exec } = require('child_process');
+const { app, BrowserWindow } = require('electron')
+const { spawn, exec } = require('child_process')
+const settings = require('electron-settings')
+const fs = require('fs')
 
 let windows = {}
 
 // XSCALE App configuration
-const wikiDir = '~/dev/Zefram-Cochrane'
-const wikiPort = 8000
+let config = {}
 let wikiProcess = {}
-const repoUngitUrl = url = 'repository?path=%2FUsers%2Fmarijn%2Fdev%2FZefram-Cochrane'
-const ungitPort = 8001
-const fullRepoUrl = `http://localhost:${ungitPort}/#/${repoUngitUrl}`
+let repoUngitUrl = ''
+let fullRepoUrl = ''
 let ungitProcess = {}
 
 function init () {
+  initSettings()
   initWiki()
   initUngit()
   createWindow('collaborate.html')
   createWindow('wiki.html')
 }
 
-function initWiki() {
-  const cmd = `tiddlywiki ${wikiDir} --server ${wikiPort}`
+function initSettings() {
+  if(!fs.existsSync(settings.file())){
+    console.log("no settings file found, initializing with default values")
+    settings.setAll({
+      wikiDir: '~/xscale-wiki',
+      wikiPort: 8000,
+      ungitPort: 8001
+    })
+  }
+  console.log(`loading settings from ${settings.file()}`)
+  config = settings.getAll()
+  repoUngitUrl = 'repository?path=%2FUsers%2Fmarijn%2Fdev%2FZefram-Cochrane'
+  fullRepoUrl = `http://localhost:${config.ungitPort}/#/${repoUngitUrl}`
+}
 
+function initWiki() {
+  const cmd = `tiddlywiki ${config.wikiDir} --server ${config.wikiPort}`
   wikiProcess = exec(cmd)
   hookProcess(wikiProcess, 'wiki')
 }
 
 function initUngit() {
-  const cmd = `./node_modules/ungit/bin/ungit --no-launchBrowser --port ${ungitPort}`
+  const cmd = `./node_modules/ungit/bin/ungit --no-launchBrowser --port ${config.ungitPort}`
   console.log(`To browse ungit, go to ${fullRepoUrl}`)
   ungitProcess = exec(cmd)
   hookProcess(ungitProcess, 'ungit')
