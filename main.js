@@ -36,14 +36,14 @@ function initSettings() {
 }
 
 function initWiki() {
-  wikiProcess = spawn('tiddlywiki', [config.wikiDir, '--server', config.wikiPort])
+  wikiProcess = spawn('tiddlywiki', [config.wikiDir, '--server', config.wikiPort], {detached: true})
   hookProcess(wikiProcess, 'wiki')
 }
 
 function initUngit() {
   const cmd = './node_modules/ungit/bin/ungit'
   console.log(`To browse ungit, go to ${fullRepoUrl}`)
-  ungitProcess = spawn(cmd, ['--no-launchBrowser', '--port', config.ungitPort])
+  ungitProcess = spawn(cmd, ['--no-launchBrowser', '--port', config.ungitPort], {detached: true})
   hookProcess(ungitProcess, 'ungit')
 }
 
@@ -98,7 +98,12 @@ app.on('window-all-closed', function () {
 app.on('activate', function () {
 })
 
-app.on('will-quit', function(){
-  wikiProcess.kill('SIGTERM');
-  ungitProcess.kill('SIGTERM');
+app.on('before-quit', function(){
+  killProcessWithAllChildren(wikiProcess)
+  killProcessWithAllChildren(ungitProcess)  
 })
+
+function killProcessWithAllChildren(child){
+  // note the neagitve sign before pid: this causes the entire group to be killed
+  process.kill(-child.pid);
+}
