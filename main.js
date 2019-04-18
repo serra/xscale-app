@@ -24,7 +24,7 @@ function initSettings() {
   if(!fs.existsSync(settings.file())){
     console.log("no settings file found, initializing with default values")
     settings.setAll({
-      wikiDir: '~/xscale-wiki',
+      wikiDir: '/Users/marijn/xscale-wiki',
       wikiPort: 8000,
       ungitPort: 8001
     })
@@ -36,15 +36,14 @@ function initSettings() {
 }
 
 function initWiki() {
-  const cmd = `tiddlywiki ${config.wikiDir} --server ${config.wikiPort}`
-  wikiProcess = exec(cmd)
+  wikiProcess = spawn('tiddlywiki', [config.wikiDir, '--server', config.wikiPort])
   hookProcess(wikiProcess, 'wiki')
 }
 
 function initUngit() {
-  const cmd = `./node_modules/ungit/bin/ungit --no-launchBrowser --port ${config.ungitPort}`
+  const cmd = './node_modules/ungit/bin/ungit'
   console.log(`To browse ungit, go to ${fullRepoUrl}`)
-  ungitProcess = exec(cmd)
+  ungitProcess = spawn(cmd, ['--no-launchBrowser', '--port', config.ungitPort])
   hookProcess(ungitProcess, 'ungit')
 }
 
@@ -100,6 +99,6 @@ app.on('activate', function () {
 })
 
 app.on('will-quit', function(){
-  wikiProcess.kill('SIGINT');
-  ungitProcess.kill('SIGINT');
+  wikiProcess.kill('SIGTERM');
+  ungitProcess.kill('SIGTERM');
 })
