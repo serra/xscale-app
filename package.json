@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "electron-settings": "^3.2.0",
-    "ungit": "^1.4.43"
+    "ungit": "^1.5.22"
   }
 }
